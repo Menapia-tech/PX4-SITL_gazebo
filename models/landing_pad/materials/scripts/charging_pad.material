@@ -1,0 +1,16 @@
+material ChargingPadTexture
+{
+  technique
+  {
+    pass
+    {
+      lighting on
+      texture_unit
+      {
+        texture ../textures/landing_pad.png
+      }
+    }
+  }
+}
+
+

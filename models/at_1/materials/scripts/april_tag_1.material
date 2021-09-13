@@ -1,0 +1,16 @@
+material at1Texture
+{
+  technique
+  {
+    pass
+    {
+      lighting on
+      texture_unit
+      {
+        texture ../textures/april_tag_1.png
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="landing_pad">
+    <pose>0.0 0.0 0.1  0 0 0</pose>
+    <static>false</static>
+    <link name="link">
+      <collision name="base_collision">
+        <geometry>
+          <box>
+            <size>1.2 1.2 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="base_visual">
+        <geometry>
+          <box>
+            <size>1.2 1.2 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name="pad_visual">
+      	<pose>0 0 0.04 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+          	<uri>model://landing_pad/materials/scripts</uri>
+               <uri>model://landing_pad/materials/textures</uri>
+          	<name>ChargingPadTexture</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="marker1">
+      	<pose>0.4 0.4 0.04 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.25 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+          	<uri>model://landing_pad/materials/scripts</uri>
+               <uri>model://landing_pad/materials/textures</uri>
+          	<name>at5Texture</name>
+          </script>
+        </material>
+      </visual>
+      <visual name="marker2">
+      	<pose>-0.4 -0.4 0.04 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.25 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+          	<uri>model://landing_pad/materials/scripts</uri>
+               <uri>model://landing_pad/materials/textures</uri>
+          	<name>at4Texture</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
